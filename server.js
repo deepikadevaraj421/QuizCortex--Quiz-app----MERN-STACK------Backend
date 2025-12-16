@@ -11,7 +11,7 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "https://your-vercel-frontend.vercel.app"
+      "https://quiz-cortex-quiz-app-mern-stack-fro.vercel.app/"
     ],
     credentials: true
   })
