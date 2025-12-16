@@ -10,12 +10,11 @@ const app = express();
 
 app.use(
   cors({
-    origin: [
-      "https://quiz-cortex-quiz-app-mern-stack-fro.vercel.app/"
-    ],
-    credentials: true
+    origin: "*"
   })
 );
+
+
 
 app.use(express.json());
 
