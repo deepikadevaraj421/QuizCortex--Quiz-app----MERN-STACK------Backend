@@ -11,7 +11,11 @@ router.get("/student", protect, isStudent, (req, res) => {
 router.get("/teacher", protect, isTeacher, (req, res) => {
   res.json({ message: "Welcome Teacher Dashboard" });
 });
-// router.post("/quizzes", authMiddleware, (req, res) => {
-//   res.json({ message: "Quiz created", data: req.body });
-// });
+router.get("/", (req, res) => {
+  res.json({
+    status: "OK",
+    message: "Backend is running successfully 🚀",
+  });
+});
+
 module.exports = router;
